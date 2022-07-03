@@ -1,0 +1,941 @@
+/* fuentes */
+
+@font-face {
+    font-family: 'Japanese';
+    src: url(../fuentes/Japanese\ 3017.ttf);
+}
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* body */
+
+body {
+    max-width: 1200vw;
+    margin: 0 auto;
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: rgb(235, 226, 224);
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        " header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+}
+
+
+a:hover {
+    color: #038c7f;
+    font-weight: bolder;
+}
+
+/* INDEX */
+/* comienzo header */
+
+.header {
+    background-color: rgb(107, 244, 244);
+    color: #1d3434;
+    grid-area: header;
+    height: 10rem;
+}
+
+.header h1 {
+    font-family: 'Japanese';
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    padding-right: 2rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 1px solid#000;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header nav {
+    display: flex;
+}
+
+.header ul li {
+    display: inline;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.header a {
+    padding-left: 2rem;
+    color: #1d3434;
+}
+
+/* fin header */
+/* comienzo main */
+
+.main {
+    grid-area: main;
+    background-image: url(../imagenes/origamimask.jpg);
+    background-size: cover;
+}
+
+.article {
+    display: flex;
+}
+
+.article section {
+    padding: 3rem;
+    width: 50%;
+}
+
+.article aside {
+    width: 40%;
+    padding-left: 5rem;
+}
+
+.parrafoMain {
+    line-height: 1rem;
+    color: #ceb5af;
+    padding: 2rem;
+}
+
+.listaMain {
+    padding: 3rem;
+}
+
+.listaMain p {
+    font-style: oblique;
+    font-size: 3rem;
+    text-align: center;
+    color: #ceb5af;
+}
+
+.main h2 {
+    line-height: 3rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #a66a5d;
+}
+
+.main ul {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #bfceb0;
+    padding-top: 2rem;
+}
+
+.main ul li {
+    list-style-type: disc;
+}
+
+/* fin main */
+/* comienzo footer */
+
+.footer {
+    margin: 0 auto;
+    display: flex;
+    grid-area: footer;
+    color: #038c7f;
+    background-color: #ceb5af;
+    align-items: center;
+}
+
+.footer div {
+    display: flex;
+    padding: 1rem;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: small;
+    padding-left: 1rem;
+}
+
+.footerH4 {
+    font-weight: lighter;
+}
+
+.footerIconInsta {
+    font-size: 2rem;
+    color: rgb(220, 16, 105);
+}
+
+.footerIconFace {
+    font-size: 2rem;
+    color: rgba(7, 7, 176, 0.887);
+    padding-left: 1rem;
+}
+
+.divRedes {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLink {
+    font-size: small;
+    color: #038c7f;
+}
+
+.footerCopy {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    color: #a66a5d;
+}
+
+/* fin footer */
+/* comienzo PAGES - CURSOS */
+
+.mainCursos {
+    height: 50rem;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    color: #1d3434;
+}
+
+.cursosDiv1 {
+    justify-self: center;
+    align-self: center;
+    font-size: medium;
+    line-height: 2rem;
+    padding: 3rem 5rem;
+}
+
+.cursosDiv2 {
+    padding: 2rem 3rem;
+}
+
+.cursosDiv2 h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.cursosDiv2 ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    list-style-type: circle;
+}
+
+.cursosDiv2 a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #a66a5d;
+}
+
+.cursosDiv2 p {
+    font-size: small;
+    font-weight: bold;
+}
+
+.cursosDiv3 {
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.cursosDiv4 {
+    align-self: center;
+}
+
+.cursosDiv4 h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: #a66a5d;
+}
+
+.cursosDiv4 p {
+    font-size: 2rem;
+}
+
+/* fin PAGES - CURSOS */
+/* comienzo PAGES - INSUMOS */
+
+
+.mainInsumos {
+    display: grid;
+    grid-area: main;
+    align-items: center;
+    justify-items: center;
+}
+
+.mainInsumos table {
+    font-size: 2rem;
+    color: #1d3434;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mainInsumos table th {
+    font-weight: lighter;
+    padding: 1rem;
+    background-color: #c0d1d1;
+}
+
+
+.mainInsumos td {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+}
+
+
+.mainInsumos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #1d3434;
+}
+
+
+.mainInsumos div h3 {
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+
+.mainInsumos p {
+    font-size: 1.5rem;
+}
+
+/* fin - PAGES INSUMOS */
+/* comienzo PAGES - CONTACTO */
+
+.mainContacto {
+    display: grid;
+    grid-area: main;
+    align-items: center;
+    justify-items: center;
+    color: #1d3434;
+    padding: 4rem;
+}
+
+.mainContacto h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.mainContacto form {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+
+.mainContacto input {
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+.mainContacto textarea {
+    width: 15rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+/* fin - PAGES CONTACTO */
+/* comienzo PAGES - GALERIA */
+
+.galeria {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    ;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-left: 1rem;
+    color: #1d3434;
+    border-top: 1px solid #1d3434;
+}
+
+.imgLeft {
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.galeriaAlumnos {
+    display: flex;
+    justify-items: space-evenly;
+}
+
+.imgRight {
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.galeriaTrabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+/* fin PAGES - GALERIA */
+
+
+/* ------------------------------------------- */
+
+/* MEDIA QUERIES */
+
+
+/* comienzo RESOLUCION 320 px */
+
+@media (max-width: 320px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 320px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header div h1 {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+
+    }
+
+    .header div p {
+        display: none;
+    }
+
+
+    .main {
+        background-image: none;
+        background-color: #1d3434;
+    }
+
+    .footer {
+        width: 100vw;
+    }
+
+    .footer div p {
+        display: none;
+    }
+
+    iframe {
+        width: 150px;
+    }
+
+    /* cursos */
+
+    .mainCursos div {
+        margin: 0rem;
+        padding-top: 5rem;
+    }
+
+    .cursosDiv2 h2 {
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+
+    .cursosDiv2 p {
+        font-size: large;
+        padding: 2rem;
+    }
+
+    .cursosDiv3 {
+        display: none;
+    }
+
+    .cursosDiv4 {
+        display: none;
+    }
+
+    /* insumos */
+
+    .mainInsumos div {
+        padding: 1rem;
+    }
+
+    /* contacto */
+
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* galeria */
+    .galeria div h2 {
+        font-size: 2rem;
+    }
+
+    .galeriaAlumnos h2 {
+        margin-top: 2rem;
+    }
+
+    .galeria div img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+/* fin RESOLUCION 320 px */
+
+
+/* comienzo RESOLUCION 480 px */
+@media (max-width: 480px) {
+
+    /* index */
+    .header nav {
+        display: flex;
+    }
+
+    .header ul li {
+        padding-left: 0rem;
+        font-size: 1rem;
+    }
+
+    .header a {
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .listaMain {
+        margin-left: 4rem;
+    }
+
+    .listaMain ul {
+        align-items: center;
+        padding-left: 5rem;
+    }
+
+    .article section {
+        display: none;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        padding: 0.5rem;
+    }
+
+    .footerCopy {
+        display: none;
+    }
+
+    /* cursos*/
+
+    .cursosDiv2 {
+        margin-left: 1rem;
+    }
+
+    .cursosDiv3 {
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .cursosDiv4 {
+        padding: 1rem;
+    }
+
+    /* insumos */
+
+    .mainInsumos div h3 {
+        font-size: 1.5rem;
+    }
+
+    .mainInsumos div p {
+        font-size: 1rem;
+    }
+
+}
+
+/* fin RESOLUCION 480px */
+
+/* comienzo RESOLUCION 720 px */
+@media (max-width: 720px) {
+
+    /* index */
+
+    .header {
+        height: 9rem;
+    }
+
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+        padding-bottom: 2rem;
+        border-left: none;
+    }
+
+    .nav a {
+        font-size: small;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    .listaMain {
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    footer div h4 {
+        display: none;
+    }
+
+    .footerLink {
+        display: none;
+    }
+
+
+    /* cursos */
+
+    .mainCursos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cursosDiv1 {
+        display: none;
+    }
+
+    .cursosDiv2 {
+        align-self: center;
+        margin-left: 6rem;
+    }
+
+    .video {
+        width: 450px;
+        height: 200px;
+        margin-left: 4rem;
+        padding: 0rem;
+    }
+
+    .cursosDiv4 h2 {
+        font-size: 1.5rem;
+    }
+
+    .cursosDiv4 p {
+        font-size: 1rem;
+    }
+
+    /* insumos */
+
+    .mainInsumos h3 {
+        font-size: 2rem;
+    }
+
+    .mainInsumos p {
+        font-size: 1rem;
+    }
+
+
+    /* contacto */
+
+    .mainContacto {
+        height: 10vh;
+    }
+
+    .mainContacto h2 {
+        padding: 1rem;
+    }
+
+    /* galeria */
+
+    body {
+        display: grid;
+        grid-template-rows: 0.5fr 6fr 0.5fr;
+    }
+
+    .galeria {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeriaAlumnos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeriaTrabajos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeriaAlumnos h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .galeriaTrabajos h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* fin  RESOLUCION 720 px */
+
+
+
+
+
+
+
+
+
+
+/*
+    
+
+
+.header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header div h1 {
+        width: 90%;
+        align-self: flex-end;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
+        color: #1d3434;
+    }
+
+    .header nav a {
+        color: #1d3434;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0.5rem;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .listaMain h2 {
+        font-size: 3rem;
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav ul {
+        padding-left: 0rem;
+
+    }
+
+/* COMIENZO PAGES - CURSOS 320px 
+
+    .mainCursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: 50%;
+        color: #1d3434;
+    }
+
+    .footer div {
+        padding: 0.3rem;
+    }
+
+
+}*/
+
+/* fin RESOLUCION 320 px */
+/* comienzo RESOLUCION 480 px 
+
+@media (max-width:480px) {*/
+
+/* COMIENZO INDEX 480px 
+    .header {
+        display: flex;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+
+    .header p {
+        display: none;
+    }
+
+    .header nav {
+        display: flex;
+        padding-top: 0.5rem;
+    }
+
+    .header ul li {
+        display: block;
+    }
+
+    .header nav a {
+        font-size: small;
+    }*/
+/* header */
+
+/* main 
+
+    .article section {
+        display: none;
+    }
+
+    .article aside {
+        width: 80%;
+        height: 60%;
+    }
+
+    .listaMain {
+        padding-right: 5rem;
+    }
+
+    .listaMain p {
+        font-size: 2rem;
+    }
+
+    .main ul {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+*/
+/* footer 
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .footerIframe {
+        padding-right: 5rem;
+    }
+
+    .footer h4 {
+        display: none;
+    }
+
+    .footerLink {
+        display: none;
+    }*/
+
+/* FIN INDEX 480px */
+/* COMIENZO PAGES - CURSOS 480px
+
+    .mainCursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: 50%;
+        color: #1d3434;
+    }
+
+    .cursosDiv1 {
+        display: none;
+    }
+
+    .cursosDiv2 a {
+        font-size: 1.5rem;
+
+    }
+
+    .cursosDiv3 {
+        display: none;
+    }
+
+    .cursosDiv4 {
+        display: none;
+    } */
+
+/* FIN PAGES - CURSOS 480px */
+/* COMIENZO PAGES - INSUMOS 480px 
+
+    .mainInsumos div {
+        font-size: 1rem;
+        align-self: center;
+        padding: 2rem;
+        color: #942727;
+    }*/
+
+/* FIN PAGES - INSUMOS 480px */
+/* COMIENZO PAGES - GALERIA 480px 
+
+    .galeria {
+        display: grid;
+        grid-area: main;
+    }
+
+    .galeria div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria div h2 {
+        align-self: center;
+    }
+
+    .galeria img {
+        width: 200px;
+        align-self: center;
+    }
+
+    .galeriaTrabajos {
+        padding-top: 1rem;
+    }
+}*/
+
+/* FIN PAGES - GALERIA 480px */
+
+/* fin  RESOLUCION 480 px */
