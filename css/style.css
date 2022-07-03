@@ -37,17 +37,24 @@ a:hover {
     font-weight: bolder;
 }
 
+iframe {
+    border-radius: 10px;
+}
+
 /* INDEX */
 /* comienzo header */
 
+.gradient {
+    background-image: linear-gradient(to bottom, rgb(1, 159, 159), rgb(103, 243, 243));
+}
+
 .header {
-    background-color: rgb(107, 244, 244);
-    color: #1d3434;
     grid-area: header;
     height: 10rem;
 }
 
 .header h1 {
+    color: #1d3434;
     font-family: 'Japanese';
     font-size: 5rem;
     letter-spacing: 0.5rem;
@@ -79,6 +86,14 @@ a:hover {
 .header a {
     padding-left: 2rem;
     color: #1d3434;
+    transition: background-color 0.5s;
+}
+
+.header a:hover {
+    color: rgb(170, 59, 28);
+    font-weight: bold;
+    background-color: #ceb5af;
+    border-radius: 10px;
 }
 
 /* fin header */
@@ -105,7 +120,7 @@ a:hover {
 }
 
 .parrafoMain {
-    line-height: 1rem;
+    line-height: 1.5rem;
     color: #ceb5af;
     padding: 2rem;
 }
@@ -206,6 +221,16 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     color: #1d3434;
+}
+
+.video {
+    box-shadow: 5px 5px 5px;
+    border-radius: 2rem;
+    transition: height 1s;
+}
+
+.video:hover {
+    height: 350px;
 }
 
 .cursosDiv1 {
@@ -312,8 +337,15 @@ footer p {
     font-size: 1.5rem;
 }
 
+.condiciones {
+    background-image: radial-gradient(circle, #d2a79d, #c0d1d1);
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
 /* fin - PAGES INSUMOS */
 /* comienzo PAGES - CONTACTO */
+
 
 .mainContacto {
     display: grid;
@@ -355,7 +387,6 @@ footer p {
     display: grid;
     grid-area: main;
     width: 100%;
-    ;
 }
 
 .galeria h2 {
@@ -367,8 +398,10 @@ footer p {
 }
 
 .imgLeft {
+    box-shadow: 5px 5px 5px;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    margin-right: 2rem;
 }
 
 .galeriaAlumnos {
@@ -377,8 +410,13 @@ footer p {
 }
 
 .imgRight {
+    transition: height 1s;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
     border-radius: 2rem;
     padding: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 .galeriaTrabajos {
@@ -447,6 +485,7 @@ footer p {
         width: 150px;
     }
 
+
     /* cursos */
 
     .mainCursos div {
@@ -476,6 +515,11 @@ footer p {
 
     .mainInsumos div {
         padding: 1rem;
+    }
+
+
+    .condiciones {
+        background-image: none;
     }
 
     /* contacto */
