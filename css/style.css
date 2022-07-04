@@ -474,7 +474,7 @@ footer p {
     }
 
     .footer {
-        width: 100vw;
+        width: 100%;
     }
 
     .footer div p {
@@ -547,7 +547,6 @@ footer p {
 
 
 /* fin RESOLUCION 320 px */
-
 
 /* comienzo RESOLUCION 480 px */
 @media (max-width: 480px) {
