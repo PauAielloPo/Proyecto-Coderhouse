@@ -45,7 +45,7 @@ iframe {
 /* comienzo header */
 
 .gradient {
-    background-image: linear-gradient(to bottom, rgb(1, 159, 159), rgb(103, 243, 243));
+    background-image: linear-gradient(to bottom, #019f9f, #67f3f3);
 }
 
 .header {
